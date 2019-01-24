@@ -17,99 +17,207 @@
     
     <div class="container-fluid justify-content-between  flex-column align-items-center d-flex m-0 py-2 ">
     <!-- header -->
-        <nav class="navbar navbar-light container m-0 py-3 px-0 justify-content-between">
+        <nav class="navbar navbar-light container m-0 py-1 px-0 justify-content-between">
             <h1 class="text-hide">
-            <img src="./images/clean-logo.png" width="100" height="80" class="logo" alt="Deie logo">Deie One Piece memory game</h1>
+            <img src="./images/clean-logo.png" width="80" height="60" class="logo" alt="Deie logo">Deie One Piece memory game</h1>
             <a class="navbar-brand m-0" target="_blank" href="https://deie.github.io/One-Piece-Game/">
-                <img src="./images/github-icon.png" width="85" height="85" class="github-logo" alt="Deie Github logo">
+                <img src="./images/github-icon.png" width="65" height="65" class="github-logo" alt="Deie Github logo">
             </a>
         </nav>
 
-        <section id="memory-board" class="d-flex flex-wrap my-3 mx-0">
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/ace.png" alt="ace" >
+        <section id="memory-board" class="none d-flex flex-wrap row justify-content-start pb-3 m-auto  ">
+            <div class="memory-card" data-image="ace">
+                <img class="img-fluid front-face" src="images/ace.png" alt="ace" >
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card" >
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/arlong.png" alt="arlong">
+            <div class="memory-card" data-image="ace">
+                <img class="img-fluid front-face" src="images/ace.png" alt="ace">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/barbe-blanche.png" alt="barbe-blanche">
+            <div class="memory-card" data-image="arlong">
+                <img class="img-fluid front-face" src="images/arlong.png" alt="arlong">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/baroque-works.png" alt="baroque-works">
+            <div class="memory-card" data-image="arlong">
+                <img class="img-fluid front-face" src="images/arlong.png" alt="arlong">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/brook.png" alt="brook.png">
+            <div class="memory-card" data-image="barbe-blanche">
+                <img class="img-fluid front-face" src="images/barbe-blanche.png" alt="barbe-blanche">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/buggy.png" alt="buggy">
+            <div class="memory-card" data-image="barbe-blanche">
+                <img class="img-fluid front-face" src="images/barbe-blanche.png" alt="barbe-blanche">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/chopper.png" alt="chopper">
+            <div class="memory-card" data-image="baroque-works">
+                <img class="img-fluid front-face" src="images/baroque-works.png" alt="baroque-works">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/franck.png" alt="franck">
+            <div class="memory-card" data-image="baroque-works">
+                <img class="img-fluid front-face" src="images/baroque-works.png" alt="baroque-works">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/gouvernement-mondiale.png" alt="gouvernement-mondiale">
+            <div class="memory-card" data-image="brook">
+                <img class="img-fluid front-face" src="images/brook.png" alt="brook">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/hommes-poissons.png" alt="hommes-poissons">
+            <div class="memory-card" data-image="brook">
+                <img class="img-fluid front-face" src="images/brook.png" alt="brook">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/luffys-flag2.png" alt="luffys-flag2">
+            <div class="memory-card" data-image="buggy">
+                <img class="img-fluid front-face" src="images/buggy.png" alt="buggy">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/luffys-flag3.png" alt="luffys-flag3">
+            <div class="memory-card" data-image="buggy">
+                <img class="img-fluid front-face" src="images/buggy.png" alt="buggy">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/nami.png" alt="nami">
+            <div class="memory-card" data-image="chopper">
+                <img class="img-fluid front-face" src="images/chopper.png" alt="chopper">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/nico.png" alt="nico">
+            <div class="memory-card" data-image="chopper">
+                <img class="img-fluid front-face" src="images/chopper.png" alt="chopper">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/sanji.png" alt="sanji">
+            <div class="memory-card" data-image="franck">
+                <img class="img-fluid front-face" src="images/franck.png" alt="franck">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/shanks.png" alt="shanks">
+            <div class="memory-card" data-image="franck">
+                <img class="img-fluid front-face" src="images/franck.png" alt="franck">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/ussop.png" alt="ussop">
+            <div class="memory-card" data-image="gouvernement-mondial">
+                <img class="img-fluid front-face" src="images/gouvernement-mondial.png" alt="gouvernement-mondial">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/vente-esclaves.png" alt="vente-esclaves">
+            <div class="memory-card" data-image="gouvernement-mondial">
+                <img class="img-fluid front-face" src="images/gouvernement-mondial.png" alt="gouvernement-mondial">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/vivi.png" alt="vivi">
+            <div class="memory-card" data-image="hommes-poissons">
+                <img class="img-fluid front-face" src="images/hommes-poissons.png" alt="hommes-poissons">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
-            <div class="memory-card">
-                <img class="img-fluid font-face" src="images/zoro.png" alt="zoro">
+            <div class="memory-card" data-image="hommes-poissons">
+                <img class="img-fluid front-face" src="images/hommes-poissons.png" alt="hommes-poissons">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="luffys-flag2">
+                <img class="img-fluid front-face" src="images/luffys-flag2.png" alt="luffys-flag2">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="luffys-flag2">
+                <img class="img-fluid front-face" src="images/luffys-flag2.png" alt="luffys-flag2">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="luffys-flag3">
+                <img class="img-fluid front-face" src="images/luffys-flag3.png" alt="luffys-flag3">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="luffys-flag3">
+                <img class="img-fluid front-face" src="images/luffys-flag3.png" alt="luffys-flag3">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="nami">
+                <img class="img-fluid front-face" src="images/nami.png" alt="nami">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="nami">
+                <img class="img-fluid front-face" src="images/nami.png" alt="nami">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="nico">
+                <img class="img-fluid front-face" src="images/nico.png" alt="nico">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="nico">
+                <img class="img-fluid front-face" src="images/nico.png" alt="nico">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="sanji">
+                <img class="img-fluid front-face" src="images/sanji.png" alt="sanji">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="sanji">
+                <img class="img-fluid front-face" src="images/sanji.png" alt="sanji">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="shanks">
+                <img class="img-fluid front-face" src="images/shanks.png" alt="shanks">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="shanks">
+                <img class="img-fluid front-face" src="images/shanks.png" alt="shanks">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="ussop">
+                <img class="img-fluid front-face" src="images/ussop.png" alt="ussop">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="ussop">
+                <img class="img-fluid front-face" src="images/ussop.png" alt="ussop">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="vente-esclaves">
+                <img class="img-fluid front-face" src="images/vente-esclaves.png" alt="vente-esclaves">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="vente-esclaves">
+                <img class="img-fluid front-face" src="images/vente-esclaves.png" alt="vente-esclaves">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="vivi">
+                <img class="img-fluid front-face" src="images/vivi.png" alt="vivi">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="vivi">
+                <img class="img-fluid front-face" src="images/vivi.png" alt="vivi">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="zoro">
+                <img class="img-fluid front-face" src="images/zoro.png" alt="zoro">
+                <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+            </div>
+            <div class="memory-card" data-image="zoro">
+                <img class="img-fluid front-face" src="images/zoro.png" alt="zoro">
                 <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
             </div>
         </section>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="d-none btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal next level -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase text-center" id="exampleModalCenterTitle">You win</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Great, now go to the next level!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Start next level</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
         
-        <footer class="mb-6 text-center">
-            <button type="button" class=" btn  btn-lg  text-uppercase">Let's start</button>
+        <footer id="start-button" class=" mb-6 text-center">
+            <button type="button" class="start-button btn  btn-lg  text-uppercase">Let's start</button>
         </footer> 
    
 

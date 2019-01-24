@@ -1,26 +1,6 @@
-var cards = [
-  { name: "ace", img: "ace.png" },
-  { name: "arlong", img: "arlong.png" },
-  { name: "barbe blanche", img: "barbe-blanche.png" },
-  { name: "baroque works", img: "baroque-works.png" },
-  { name: "brook", img: "brook.png" },
-  { name: "buggy", img: "buggy.png" },
-  { name: "chopper", img: "chopper.png" },
-  { name: "franck", img: "franck.png" },
-  { name: "gouvernement mondiale", img: "gouvernement-mondiale.png" },
-  { name: "hommes poissons", img: "hommes-poissons.png" },
-  { name: "luffys-flag2", img: "luffys-flag2.png" },
-  { name: "nami", img: "nami.png" },
-  { name: "nico", img: "nico.png" },
-  { name: "sanji", img: "sanji.png" },
-  { name: "shanks", img: "shanks.png" },
-  { name: "ussop", img: "ussop.png" },
-  { name: "vente esclaves", img: "vente-esclaves.png" },
-  { name: "vivi", img: "vivi.png" },
-  { name: "zoro", img: "zoro.png" },
-  { name: "ironman", img: "ironman.png" },
-  { name: "spiderman", img: "spiderman.png" },
-  { name: "superman", img: "superman.png" },
-  { name: "the avengers", img: "the-avengers.png" },
-  { name: "thor", img: "thor.png" }
-];
+window.onload = function () {
+  $("#start-button").click(function () {
+    $("#start-button").toggle();
+    $('#memory-board').removeClass('none');
+  });
+};
