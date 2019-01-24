@@ -1,13 +1,15 @@
-window.onload = function () {
-  $("#start-button").click(function () {
-    $("#start-button").toggle();
-    $('#memory-board').removeClass('none');
-  });
-  setTimeout(() => {
-    console.log('caca')
-    $("#soundStart").play();
-  }, 250);
-};
+
+var audioStart = document.querySelector("#soundStart");
+// var audioStart = document.querySelector("#soundStart"); creat other audios
+// with their Id
+
+$("#start-button").click(function () {
+  $("#start-button").toggle();
+  $('#memory-board').removeClass('none');
+  audioStart.play();
+});
+
+  
 var cardsData = [
   { name: "ace", img: "ace.png" },
   { name: "arlong", img: "arlong.png" },
@@ -46,21 +48,7 @@ function name(params) {
   
 }
 
-function startLevel(playersLevel) {
-  playersLevel.forEach(function(onecard) {
-    $("section").append(`
-    <div class="memory-card" data-image="${onecard.name}">
-      <img class= "img-fluid front-face" src = "images/${onecard.img}"
-        alt = "${onecard.name}" >
-      <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
-    </div>`);
-  });
 
-  shuffling();
-};
-
-startLevel(levelOne);
-clickCard();
-resetBoard();
+// resetBoard();
 
 

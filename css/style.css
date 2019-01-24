@@ -109,6 +109,27 @@ p {
   }
 }
 
+.btn-m {
+    text-align: center;
+    color: #000;
+    background-color: #ffffffe8;
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding-bottom: 0;
+    padding-top: 20px;
+    border-radius: .3rem;
+    border: .3rem solid #000;
+    animation: pulse 4s infinite;
+}
+@keyframes pulse {
+  0% {   
+    transform: scale(0.5, 0.5);
+  }
+  100% {    
+    transform: scale(1, 1);
+  }
+}
 .btn:hover {
     color: #000;
     text-decoration: none;
@@ -129,6 +150,42 @@ p {
     perspective: 1000px;
 }
 
+#memory-board.levelOne {
+    width: 440px;
+    height: 380px;
+    border-radius: 3px;
+    perspective: 1000px;
+}
+
+#memory-board.levelTwo {
+    width: 640px;
+    height: 580px;
+    border-radius: 3px;
+    perspective: 1000px;
+}
+
+#memory-board.levelThree {
+    width: 840px;
+    height: 680px;
+    border-radius: 3px;
+    perspective: 1000px;
+}
+.none {
+    visibility: hidden;
+    animation: stretch 4s ease-out infinite;
+}
+@keyframes stretch {
+  0% {   
+    transform: scale(0.5, 0.5);
+  }
+  100% {    
+    transform: scale(1, 1);
+  }
+}
+
+
+/* Cards */
+/*----------------------*/
 .memory-card {
     position: relative;
     width: calc(12.5% - 10px);
@@ -137,6 +194,21 @@ p {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+}
+
+.levelOne .memory-card {
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+} 
+
+.levelTwo .memory-card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+}
+
+.levelThree .memory-card {
+    width: calc(16.666666% - 10px);
+    height: calc(20% - 10px);
 }
 
 .memory-card.flip {
@@ -164,15 +236,12 @@ p {
     background: #ffc107d9;
 }
 
-.none {
-    visibility: hidden;
-    animation: stretch 4s ease-out infinite;
+
+
+/* Modal */
+/*----------------------*/
+.modal-content {
+    background-color: #ffc107e3;
+    border: 3px solid #e49d20;
 }
-@keyframes stretch {
-  0% {   
-    transform: scale(0.5, 0.5);
-  }
-  100% {    
-    transform: scale(1, 1);
-  }
-}
+
