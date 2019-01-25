@@ -43,12 +43,3 @@ levelOne = [...levelOne, ...levelOne];
 levelTwo = [...levelTwo, ...levelTwo];
 levelThree = [...levelThree, ...levelThree];
 levelFour = [...levelFour, ...levelFour];
-
-function name(params) {
-  
-}
-
-
-// resetBoard();
-
-

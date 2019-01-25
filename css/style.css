@@ -80,8 +80,14 @@ p {
 
 /* Nav */
 /*----------------------*/
-.github-logo:hover {
-    opacity: 0.75;
+nav a {
+    transform: scale(1);
+}
+
+nav a:hover {
+    
+    transform: scale(.9);
+    transition: transform .2s;
 }
 
  
@@ -98,7 +104,7 @@ p {
     padding-top: 25px;
     border-radius: .3rem;
     border: .3rem solid #000;
-    animation: pulse 4s infinite;
+    animation: pulse 4s normal;
 }
 @keyframes pulse {
   0% {   
@@ -112,15 +118,15 @@ p {
 .btn-m {
     text-align: center;
     color: #000;
-    background-color: #ffffffe8;
+    background-color: #ffc1077d;
     padding: 0 1.5rem;
     font-size: 1.8rem;
-    font-weight: bolder;
+    font-weight: 400;
     padding-bottom: 0;
     padding-top: 20px;
     border-radius: .3rem;
-    border: .3rem solid #000;
-    animation: pulse 4s infinite;
+    border: 0.15rem solid #e49d20;
+    animation: pulse 4s normal;
 }
 @keyframes pulse {
   0% {   
@@ -133,7 +139,9 @@ p {
 .btn:hover {
     color: #000;
     text-decoration: none;
-    background-color: transparent;
+    
+    transform: scale(.97);
+    transition: transform .2s;
 }
 .btn:focus {
     box-shadow: none;
@@ -241,7 +249,16 @@ p {
 /* Modal */
 /*----------------------*/
 .modal-content {
+    justify-content: center;
     background-color: #ffc107e3;
     border: 3px solid #e49d20;
 }
 
+.modal-footer {
+    border-top: 3px solid #e49d20;
+}
+
+.modal-body img {
+    border: 3px solid #e49d20;
+    border-radius: 5px;
+}

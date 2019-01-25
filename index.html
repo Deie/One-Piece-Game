@@ -18,75 +18,66 @@
     <div class="container-fluid justify-content-between  flex-column align-items-center d-flex m-0 py-2 ">
     <!-- header -->
         <nav class="navbar navbar-light container m-0 py-1 px-0 justify-content-between">
-            <h1 class="text-hide">
-            <img src="./images/clean-logo.png" width="80" height="60" class="logo" alt="Deie logo">Deie One Piece memory game</h1>
+            <a href="https://deie.github.io/One-Piece-Game/">   
+                <h1 class="text-hide">
+                    <img src="./images/clean-logo.png" width="80" height="60" class="logo" alt="Deie logo">Deie One Piece memory game</h1>
+            </a>
             <a class="navbar-brand m-0" target="_blank" href="https://deie.github.io/One-Piece-Game/">
                 <img src="./images/github-icon.png" width="65" height="65" class="github-logo" alt="Deie Github logo">
             </a>
         </nav>
 
+        <!-- Memory Game -->
         <section id="memory-board" class="none d-flex flex-wrap row justify-content-start pb-3 m-auto levelOne ">
-        </section>
+        </section><!-- End Memory Game -->
         
-        <audio id="soundStart" src="./audio/audiostart.mp3"></audio>
-        <audio id="soundlevel1" src="audio/onepiecelevelone.mp3"></audio>
-        <audio id="soundlevel2" src="audio/onepieceleveltwo.mp3"></audio>
-        <audio id="soundlevel3" src="audio/onepiecelevelthree.mp3"></audio>
-        <audio id="soundlevel4" src="audio/onepiecelevelfourth.mp3"></audio>
-
-
+        <!-- Audio -->
+        <audio id="soundStart" autoplay  src="./audio/audioback.mp3"></audio>
         
-        <!-- Modal -->
+        <!-- Modal Win -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header text-center">
-                        <h5 class="modal-title text-uppercase " id="exampleModalCenterTitle">You win</h5>
+                    <div class="modal-header justify-content-center border-0">
+                        <h5 class="modal-title text-uppercase pt-3" >You win marvelous Pirat</h5>
                     </div>
-                    <div class="modal-body text-center m-auto">
-                        <p>Great, now go to the next level!</p>
+                    <div class="modal-body justify-content-center flex-column align-items-center m-auto">
+                        <img class="img-fluid" src="./images/youwin.png" width="420" height="315" alt="meme ophra winfrey">
+                        <p class="text-center m-0 px-1 pt-3">Now let's go to the next level !</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-m" id="start-new">Start next level</button>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="start-new btn btn-m">Start next level</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Button trigger modal 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button>
-
-        Modal next level
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-uppercase text-center" id="exampleModalCenterTitle">You win</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Great, now go to the next level!</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Start next level</button>
-                        </div>
+        </div><!-- End Modal Win -->
+       
+        <!-- Modal Gameover -->
+        <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center border-0">
+                        <h5 class="modal-title text-uppercase pt-3">It's done motherf****r</h5>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center flex-column align-items-center m-auto">
+                        <img class="img-fluid ml-2" src="./images/gameover.png" width="420" height="315" alt="meme house burning down">
+                        <p class="text-center m-0 px-1 pt-3">You are the Pirate King, Queen or whatever gender !</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="start-new btn btn-m">Start again</button>
                     </div>
                 </div>
-            </div>-->
-       
+            </div>
+        </div><!-- End Modal Gameover -->
 
-        
+        <!-- Start button -->
         <footer id="start-button" class=" mb-6 text-center">
             <button type="button" class="start-button btn  btn-lg  text-uppercase">Let's start</button>
-        </footer> 
-   
+        </footer><!-- End start button -->
 
-    </div>
+    </div><!-- End container-fluid -->
 
 
     

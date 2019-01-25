@@ -59,7 +59,6 @@ function unflipCard() {
 
 
 function resetBoard() {
-    console.log("reset");
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 };
@@ -99,13 +98,17 @@ function startLevel(playersLevel) {
 function checkWin() {
     const cards = document.querySelectorAll(".memory-card");
     if (matchCount === cards.length) {
-        $("#exampleModalCenter").modal("show");
+        if (matchCount === 40) {
+            $("#gameOverModal").modal("show");
+        } else {
+            $("#exampleModalCenter").modal("show");
+        }
     }
 }
 
 startLevel(levelOne);
 
-$("#start-new").click(function () {
+$(".start-new").click(function () {
     const cards = document.querySelectorAll(".memory-card");
 
     switch (cards.length) {
@@ -134,4 +137,5 @@ $("#start-new").click(function () {
     }
 
     $("#exampleModalCenter").modal("hide");
+    $("#gameOverModal").modal("hide");
 });
