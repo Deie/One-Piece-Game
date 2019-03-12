@@ -1,8 +1,4 @@
 
-
-
-
-
 var hasFlippedCard = false;
 var lockBoard = false;
 var firstCard, secondCard;
@@ -85,10 +81,12 @@ function startLevel(playersLevel) {
 
     playersLevel.forEach(function (onecard) {
         $("section").append(`
-    <div class="memory-card" data-image="${onecard.name}">
-      <img class= "img-fluid front-face" src = "images/${onecard.img}"
-        alt = "${onecard.name}" >
-      <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+    <div class="memory-card container-fluid" data-image="${onecard.name}">
+     <div class="row">
+        <img class= "img-fluid front-face" src = "images/${onecard.img}"
+            alt = "${onecard.name}" >
+        <img class="img-fluid back-face" src="images/backface.png" alt="Luffy flag back face card">
+      </div>
     </div>`);
     });
 
